@@ -5,4 +5,9 @@
 <string name="btn_greet">Przywitaj się</string>
 <string name="greeting">Cześć, %1$s!</string>
 <string name="error_empty_name">Najpierw wpisz imię</string>
+
+
+<!--Obczaj ten nowy kkkod zadanie 4-->
+    <string name="btn_clear">Wyczyść</string>
+    <string name="cb_shout">Krzycz</string>
 </resources>
