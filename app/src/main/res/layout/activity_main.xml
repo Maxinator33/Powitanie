@@ -54,7 +54,7 @@
         tools:text="Cześć, Anna!" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnClear"
         android:layout_width="124dp"
         android:layout_height="48dp"
         android:layout_marginStart="48dp"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cbShout"
         android:layout_width="124dp"
         android:layout_height="48dp"
         android:layout_marginTop="312dp"

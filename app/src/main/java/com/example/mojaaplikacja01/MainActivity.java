@@ -2,6 +2,7 @@ package com.example.mojaaplikacja01;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
     // pola klasy - dostępne we wszystkich metodach
     private EditText etName;
     private Button btnGreet;
+    private Button btnClear;
+    private CheckBox cbShout;
     private TextView tvResult;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         etName = findViewById(R.id.etName);
         btnGreet = findViewById(R.id.btnGreet);
         tvResult = findViewById(R.id.tvResult);
+        btnClear = findViewById(R.id.btnClear);
+        cbShout = findViewById(R.id.cbShout);
+
 
         // co ma się stać po kliknięciu
         btnGreet.setOnClickListener(v -> greet());
