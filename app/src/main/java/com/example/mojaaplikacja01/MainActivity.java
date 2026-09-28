@@ -44,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
         // co ma się stać po kliknięciu
         btnGreet.setOnClickListener(v -> greet());
+
+        // 4. Obsługa kliknięcia "Wyczyść" (ma byc puste pole w tekscie i wyniku)
+        btnClear.setOnClickListener(v -> {
+            etName.setText("");
+            tvResult.setText("");
+            cbShout.setChecked(false); // odznaczony czekboks tak dla sportu
+        });
     }
 
     private void greet() {
@@ -55,5 +62,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         tvResult.setText(getString(R.string.greeting, name));
+
+        String resultText = getString(R.string.greeting, name);
+
+        // Czekboks zaznaczony pora na DUŻY TEKST
+        if (cbShout.isChecked()) {
+            resultText = resultText.toUpperCase();
+        }
+
+        // poka go na ekranie
+        tvResult.setText(resultText);
     }
 }
